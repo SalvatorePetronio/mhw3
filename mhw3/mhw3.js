@@ -46,7 +46,7 @@ modalView.addEventListener('click', onModalClick);*/
  //__________________________________________________________________
   function generate(event){
     event.preventDefault();
-    const YOUR_ACCESS_KEY = '6LclXoC31wut3LfDYpniG34kIUFv6Z4OgC3bgC5V_x8';
+    const YOUR_ACCESS_KEY = '';
  fetch('https://api.unsplash.com/photos/random', 
     {
         headers: {
@@ -76,7 +76,7 @@ document.querySelector('form').addEventListener('submit', generate);
 
 function article(){
 
-    const apitoken = '9vJboqdtrFLOTFVNOckwtr584EhCscULmLvB6Ds'
+    const apitoken = ''
     fetch('https://api.thenewsapi.com/v1/news/all?api_token='+apitoken+'R&language=en&limit=3')
     .then(onRes)
     .then(onJsonNews);
